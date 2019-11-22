@@ -41,17 +41,240 @@
 				<p>GIT COMMANDS</p>
 			</section>
 
-			<div class="guideline-container">
-			
-				xxx
+			<div class="git-container">
+        <div class="git-heading">
+          <h1>Why Git?</h1>
+          <p>
+              Git is a distributed version-control system for tracking changes in source code during software development. <br>
+              It is designed for coordinating work among programmers, but it can be used to track changes — in any set of files.<br>
+              Its goals include speed, data integrity, and support for distributed, non-linear workflows.<br>
+          </p>
+        </div>
+       
+				<table>
+					<tr>
+            <th width="10%">No</th>
+					  <th width="40%">Git commands</th>
+					  <th width="50%">Description</th>
+					</tr>
+					<tr>
+            <td>1</td>
+					  <td>git config — global user.name “name”</td>
+					  <td>Configure user name globally</td>
+					</tr>
+					<tr>
+            <td>2</td>
+					  <td>git config — global user.email “email id”</td>
+					  <td>Configure user email id globally</td>
+					</tr>
+					<tr>
+            <td>3</td>
+					  <td>git config — global — list</td>
+					  <td>List global user</td>
+					</tr>
+					<tr>
+            <td>4</td>
+					  <td>git config — global — help.autocorrect 1</td>
+					  <td>Autocorrect the spelling mistake in git command</td>
+					</tr>
+					<tr>
+            <td>5</td>
+					  <td>git config —unset option</td>
+					  <td>Remove from git config</td>
+					</tr>
+					<tr>
+            <td>6</td>
+					  <td>git add</td>
+					  <td>Adds a file to the staging area</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>git commit -m “”</td>
+            <td>Records the file permanently in the version history</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>git status</td>
+            <td>Lists all the files that have to be committed</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>git log</td>
+            <td>List the version history for the current branch.</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>git diff</td>
+            <td>Shows the file differences which are not yet staged</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>git diff [first branch] [second branch]</td>
+            <td>Differences between the two branches mentioned</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>git reset [file]</td>
+            <td>Unstages the file, but it preserves the file contents</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>git reset –hard [commit]</td>
+            <td>Discards all history and goes back to the specified commit</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>git rm [file]</td>
+            <td>Deletes the file from your working directory and stages the deletion</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>git show [commit]</td>
+            <td>Shows the metadata and content changes of the specified commit</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>git branch</td>
+            <td>Lists all the local branches in the current repository</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>git branch [branch name]</td>
+            <td>Creates a new branch</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>git branch -d [branch name]</td>
+            <td>Deletes the feature branch</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>git checkout [branch name]</td>
+            <td>Switch from one branch to another</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>git checkout -b [branch name]</td>
+            <td>Creates a new branch and also switches to it</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>git merge [branch name]</td>
+            <td>Merges the specified branch’s history into the current branch</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>git branch -r</td>
+            <td>Show remove branches</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>git push [variable name] master</td>
+            <td>Sends the committed changes of master branch to your remote repository</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>git push [variable name] :[branch name]</td>
+            <td>Deletes a branch on your remote repository</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>git pull [Repository Link]</td>
+            <td>Fetches and merges changes on the remote server to your working directory</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>git stash save</td>
+            <td>Temporarily stores all the modified tracked files</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>git stash pop</td>
+            <td>Restores the most recently stashed files</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>git stash list</td>
+            <td>Lists all stashed changesets</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>git stash drop</td>
+            <td>Discards the most recently stashed changeset</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>git stash</td>
+            <td>Takes your uncommitted changes and saves them away for later use</td>
+          </tr>
+            <tr>
+              <td>31</td>
+              <td>git stash show</td>
+              <td>View a summary of a stash</td>
+            </tr>
+            <tr>
+              <td>32</td>
+              <td>git clean -f</td>
+              <td>Clean untracked files</td>
+            </tr>
+            <tr>
+              <td>33</td>
+              <td>git clean -f -d</td>
+              <td>Remove directories</td>
+            </tr>
+            <tr>
+            <td>34</td>
+              <td>git clean -f -X</td>
+              <td>Remove ignored files</td>
+            </tr>
+            <tr>
+              <td>35</td>
+              <td>git clean -f -x</td>
+              <td>Remove ignored as well as non-ignored files</td>
+            </tr>
+            <tr>
+              <td>36</td>
+              <td>git clone [url]</td>
+              <td>Download all the history of the project</td>
+            </tr>
+            <tr>
+              <td>37</td>
+              <td>git log —online | wc -1</td>
+              <td>Total commit count</td>
+            </tr>
+            <tr>
+              <td>38</td>
+              <td>git shortlog</td>
+              <td>Log history with author details also show number of commits for each of them</td>
+            </tr>
+            <tr>
+              <td>39</td>
+              <td>git fetch</td>
+              <td>Download contents from a remote repository</td>
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>git rebase</td>
+              <td>Feature branch on to master</td>
+            </tr>
+            <tr>
+              <td>41</td>
+              <td>git merge</td>
+              <td>Merging adds a new commit to your history</td>
+            </tr>
+            <tr>
+              <td>42</td>
+              <td>git cherry-pick commit-name</td>
+              <td>Picking a commit from a branch and applying it to another</td>
+            </tr>       
+				  </table>
 			</div>
-			<footer>
-				<a href="https://github.com/fayausa/CSS-Guildelines" target="_blank"><img src="image/github.png"></a>
-				<p>Copyright © FAYA Corporation 2019</p>
-			</footer>
-		</main>
-		<!-- main div end -->
-
+      <footer>
+        <a href="https://github.com/fayausa/Git-commands" target="_blank"><img src="image/github.png"></a>
+        <p>Copyright © FAYA Corporation 2019</p>
+      </footer>
+    </main>
+    <!-- main div end -->
 
 		<!-- Organization schema start -->
 		<script type="application/ld+json">
@@ -78,7 +301,6 @@
 										],
 				"author": {
 					"@type": "Person",
-					"url": "www.daliyajohn.com",
 					"name": "Daliya John"
 					}
 				}			
